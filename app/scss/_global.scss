@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+body {
+  color: $default;
+  font-size: 14px;
+  line-height: 24px;
+  @extend %opensans-300;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 75px;
+  letter-spacing: -1.65px;
+  color: $title;
+  @extend %montserrat-700;
+  padding-bottom: 14px;
+  position: relative;
+  align-self: flex-start;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: $accent;
+  }
+}
