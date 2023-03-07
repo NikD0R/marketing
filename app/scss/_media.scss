@@ -1,0 +1,448 @@
+@media (max-width: 1400px) {
+  .magic {
+    &__inner {
+      padding: 50px 0;
+    }
+  }
+
+  .slider-blog {
+    &__item {
+      padding: 170px 60px;
+    }
+
+    .slick-prev {
+      left: 0;
+    }
+
+    .slick-next {
+      right: 0;
+    }
+
+    .slick-dots {
+      margin-left: 60px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    &__top-inner {
+      padding-bottom: 15px;
+    }
+  }
+
+  .about {
+    padding: 100px 0;
+
+    &__inner {
+      display: block;
+    }
+
+    &__title {
+      line-height: 65px;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      max-width: 100%;
+    }
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 65px;
+  }
+
+  .expertise {
+    padding: 100px 0;
+
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+
+  .portfolio {
+    &__filter-btn {
+      margin-right: 0;
+    }
+  }
+
+  .info {
+    &__numbers {
+      padding-bottom: 100px;
+    }
+  }
+
+  .slider-blog {
+    padding: 100px 0;
+  }
+
+  .team {
+    padding: 100px 0;
+
+    &__title {
+      margin-bottom: 50px;
+    }
+
+    &__items {
+      column-gap: 20px;
+    }
+  }
+
+  .partners {
+    &__list {
+      column-gap: 20px;
+    }
+  }
+
+  .pricing {
+    padding: 100px 0;
+
+    &__title {
+      margin-bottom: 50px;
+    }
+
+    &__items {
+      column-gap: 20px;
+    }
+  }
+
+  .contact {
+    padding: 100px 0;
+
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .expertise {
+    &__inner {
+      display: block;
+      margin-bottom: 75px;
+    }
+
+    &__info {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &__items {
+      display: block;
+    }
+
+    &__item {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .portfolio {
+    &__top {
+      display: block;
+      margin-bottom: 50px;
+    }
+
+    &__filter-btn {
+      margin-top: 40px;
+    }
+
+    &__content {
+      column-count: 3;
+      margin-bottom: 55px;
+    }
+  }
+
+  .magic {
+    background-image: none;
+
+    &__inner {
+      margin-right: 0;
+      max-width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+
+  .partners {
+    padding-top: 40px;
+  }
+
+  .contact {
+    background-image: none;
+
+    &__form {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .about, .expertise, .slider-blog, 
+  .team, .pricing, .contact {
+    padding: 75px 0;
+  }
+
+  .portfolio {
+    padding: 50px 0 75px;
+  }
+
+  .info {
+    &__numbers {
+      padding-bottom: 75px;
+    }
+  }
+
+  .footer-top {
+    padding-top: 75px;
+
+    &__logo {
+      margin-bottom: 40px;
+    }
+
+    ul.footer-top__social-list {
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    &__social-item {
+      width: 33.333%;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+  
+    &__top-inner path,
+    &__top-inner rect {
+      transition: all .5s;
+    }
+
+    &__top-inner.header__top-inner--active .menu__list {
+      transform: translateY(0%);
+    }
+
+    &__top-inner.header__top-inner--active path {
+      fill: #fff;
+    }
+
+    &__top-inner.header__top-inner--active .menu__btn rect {
+      fill: #fff;
+    }
+
+    &__top-inner {
+      align-items: center;
+    }
+
+    .logo {
+      position: relative;
+      z-index: 2;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 50px;
+      line-height: 65px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .menu {
+    &__list {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      transform: translateY(-200%);
+      display: block;
+      text-align: center;
+      transition: all .5s;
+    }
+
+    ul.menu__list {
+      padding: 90px 0 15px;
+    }
+
+    &__list-item + .menu__list-item {
+      margin-left: 0;
+    }
+
+    &__list-link {
+      padding: 15px 4px;
+      display: inline-block;
+      color: #FFFFFF;
+    }
+
+    &__btn {
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin-top: 25px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .portfolio {
+    &__btn {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    &__btn + .portfolio__btn {
+      margin-left: 0;
+    }
+
+    &__content {
+      column-count: 2;
+    }
+  }
+
+  .info {
+    .blockquote {
+      padding: 50px 10px;
+    }
+
+    &__video {
+      margin-bottom: 75px;
+    }
+
+    &__numbers {
+      flex-wrap: wrap;
+    }
+
+    &__numbers-item {
+      width: 50%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .slider-blog {
+    &__item {
+      padding: 40px 0;
+    }
+
+    &__item-title {
+      font-size: 25px;
+      line-height: 32px;
+    }
+
+    .slick-dots {
+      margin-left: 0;
+    }
+  }
+
+  .partners {
+    &__list {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    &__list-item {
+      margin-bottom: 25px;
+    }
+  }
+
+  .pricing {
+    &__items {
+      display: block;
+    }
+
+    ul.pricing__item {
+      margin: 0 auto 25px;
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .team {
+    &__items {
+      display: block;
+    }
+
+    &__item {
+      margin-bottom: 25px;
+    }
+
+    &__item-img {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .header {
+    &__title {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  .about {
+    &__title {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+
+  .portfolio {
+    &__content {
+      column-gap: 12px;
+    }
+
+    &__item {
+      margin-bottom: 12px;
+    }
+  }
+
+  .info {
+    &__numbers-item {
+      width: 100%;
+    }
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .footer-top {
+    &__social-item {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .expertise {
+    &__item {
+      padding-left: 0;
+      padding-top: 60px;
+    }
+  }
+
+  .slider-blog {
+    &__item-title {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+}

@@ -7,12 +7,12 @@
   <title>Marketing</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body id="body">
   <header class="header">
     <div class="header__top">
       <div class="container">
         <div class="header__top-inner">
-          <a class="logo" href="#">
+          <a class="logo" href="#body">
             <svg width="80" height="64" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M4.2175 54.9976V29.7976H14.8375C17.5255 29.7976 19.8895 30.3256 21.9295 31.3816C23.9935 32.4376 25.5895 33.9136 26.7175 35.8096C27.8695 37.7056 28.4455 39.9016 28.4455 42.3976C28.4455 44.8936 27.8695 47.0896 26.7175 48.9856C25.5895 50.8816 23.9935 52.3576 21.9295 53.4136C19.8895 54.4696 17.5255 54.9976 14.8375 54.9976H4.2175ZM7.8175 51.8656H14.6215C16.7095 51.8656 18.5095 51.4696 20.0215 50.6776C21.5575 49.8856 22.7455 48.7816 23.5855 47.3656C24.4255 45.9256 24.8455 44.2696 24.8455 42.3976C24.8455 40.5016 24.4255 38.8456 23.5855 37.4296C22.7455 36.0136 21.5575 34.9096 20.0215 34.1176C18.5095 33.3256 16.7095 32.9296 14.6215 32.9296H7.8175V51.8656ZM33.9597 54.9976V29.7976H36.9117L48.2157 48.8416H46.6317L57.7917 29.7976H60.7437L60.7797 54.9976H57.3237L57.2877 35.2336H58.1157L48.1797 51.9376H46.5237L36.5157 35.2336H37.4157V54.9976H33.9597Z"
@@ -32,32 +32,32 @@
             </button>
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">
+                <a class="menu__list-link" href="#body">
                   HOME
                 </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">
+                <a class="menu__list-link" href="#about">
                   ABOUT US
                 </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">
+                <a class="menu__list-link" href="#portfolio">
                   PORTFOLIO
                 </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">
+                <a class="menu__list-link" href="#team">
                   OUR TEAM
                 </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">
+                <a class="menu__list-link" href="#blog">
                   BLOG
                 </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">
+                <a class="menu__list-link" href="#contact">
                   CONTACT
                 </a>
               </li>
@@ -80,7 +80,7 @@
     </div>
   </header>
   <main class="main">
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about__inner">
           <h2 class="title about__title">
@@ -100,7 +100,7 @@
         </div>
       </div>
     </section>
-    <section class="expertise">
+     <section class="expertise">
       <div class="container">
         <h2 class="title expertise__title">
           Our Expertise
@@ -159,7 +159,7 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="portfolio__top">
           <h2 class="title">
@@ -309,7 +309,7 @@
         </div>
       </div>
     </section>
-    <section class="slider-blog">
+    <section class="slider-blog" id="blog">
       <div class="container">
         <div class="slider-blog__inner">
           <div class="slider-blog__item">
@@ -381,7 +381,7 @@
         </div>
       </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
         <h2 class="title team__title">
           Our Team
@@ -460,8 +460,8 @@
             </li>
           </ul>
           <ul class="pricing__item">
-            <li class="pricing__item-name">Starter</li>
-            <li class="pricing__item-num"><sup>$</sup>500</li>
+            <li class="pricing__item-name pricing__item-name--popular">Starter</li>
+            <li class="pricing__item-num pricing__item-num--popular"><sup>$</sup>500</li>
             <li class="pricing__item-li">2 Logo Design</li>
             <li class="pricing__item-li">2 Website Design</li>
             <li class="pricing__item-li">1 Domain Free</li>
@@ -490,12 +490,11 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <h2 class="title contact__title">
           Get in Touch
         </h2>
-        <div class="contact__inner">
           <form class="contact__form" action="#"">
             <input class="contact__form-input" type="text" placeholder="ИМЯ" required>
             <input class="contact__form-input" type="email" placeholder="EMAIL" required>
@@ -504,14 +503,13 @@
               ОТПРАВИТЬ
             </button>
           </form>
-        </div>
       </div>
     </section>
-  </main>
+  </main> 
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
-        <a class="footer-top__logo" href="#">
+        <a class="footer-top__logo" href="#body">
           <img src="images/logo-white.svg" alt="logo">
         </a>
         <div class="footer-top__contact">
@@ -557,7 +555,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer-top__go-top" href="#">
+        <a class="footer-top__go-top" href="#body">
           <img src="images/icons/angle-up.svg" alt="arrow top">
         </a>
       </div>
@@ -567,7 +565,7 @@
         @2020 O...Marketing
       </p>
     </div>
-  </footer>
+  </footer> 
   <script src="js/main.min.js"></script>
 </body>
 </html>
