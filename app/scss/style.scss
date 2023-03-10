@@ -464,12 +464,13 @@
     color: $title;
     @extend %opensans-700;
     margin-bottom: 10px;
-    max-width: 704px;
+    max-width: 700px;
     display: inline-block;
+    text-transform: uppercase;
   }
 
   &__item-descr {
-    max-width: 560px;
+    max-width: 450px;
   }
 
   .slick-dots {
